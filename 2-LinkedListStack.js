@@ -62,20 +62,12 @@ class Stack{
     }
 
     size(){
-        if(this.length === 0){
-            return 0
-        }else{
-            let currentNode = this.head
-            while(currentNode.next !== null){
-                currentNode = currentNode.next      
-            }
-            return this.length
-        }
-
+        return this.length
     }
 }
 
 const stack = new Stack()
+
 stack.push(1)
 stack.push(2)
 stack.push(3)
